@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import "compass/css3";
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Noto Sans','Montserrat', '微軟正黑體', Helvetica, Arial, sans-serif; 
+}
+
+section, article, header, footer, nav, aside {
+    display: block;
+    zoom: 1;
+}
+
+body { 
+    background: #f5f5f5;
+    color: #404040;
+    font-size: 14px;
+    line-height: 1;
+}
+
+#wrapper{
+   margin: 0 auto;
+}
+
+a {
+    color: #acb6bc;
+    text-decoration: none;
+    
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+a:hover,
+a:active {
+    color: #b6caca;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+    display: block;
+}
+
+img {
+     height: auto;
+     max-width: 100%;
+ }
+
+/*===================== main =====================*/
+
+h1, h2, h3 {
+    text-align: center;
+    
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+}
+
+h1 { 
+    font-size: 36px;  
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;/*28*/
+    padding-bottom: 20px;   
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 20px;   
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    padding-bottom: 20px;
+    
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 28px;
+}
+
+
+/*===================== nav =====================*/
+
+.nav{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding: 32px 0px;
+    background: #f5f5f5;
+    
+}
+
+.nav-container{
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flow-root;
+    /*padding: 0 5vw;*/
+}
+
+ul.logo{ 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+ul.menu{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+ul.menu li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+ul.menu li a {
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #404040;
+    font-weight: 700;
+    
+}
+
+ul.menu li a:hover {
+    color: #b6caca;
+    
+}
+
+/*===================== container =====================*/
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 160px;
+    /*padding: 160px 5vw 0 5vw;*/
+    
+}
+
+.about, .contact, .interests, .title {
+    margin-bottom: 80px;
+}
+
+/*===================== work =====================*/
+
+.work-container{
+    position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 0 5vw;*/
+    display: flow-root;
+}
+
+.work-item-2,
+.work-item-3,
+.pic-item-2,
+.pic-item-3{
+    float: left;
+    position: relative;
+    background: #fff;
+    border-radius: 2%;
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    /*overflow: hidden;
+    transform: rotate(0deg);
+    -webkit-transform:rotate(0deg);*/
+}
+
+.work-item-2,
+.pic-item-2{
+    width: 46%;
+    height: auto;
+    margin: 0 2% 4% 2%;
+
+}
+
+.work-item-3,
+.pic-item-3 {
+    width: 31%;
+    height: auto;
+    margin: 0 1.15% 4% 1.15%;
+}
+
+.work-item-2 img, 
+.work-item-3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2% 2% 0 0;
+    -moz-border-radius: 2% 2% 0 0;
+    -webkit-border-radius: 2% 2% 0 0;
+    
+    /*-moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;*/
+}
+
+.pic-item-2 img, 
+.pic-item-3 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+    
+    /*-moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;*/
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    
+    /*-moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;*/ 
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    border-radius: 2%;
+    -moz-border-radius: 2%;
+    -webkit-border-radius: 2%;
+}
+
+
+.work-item-2:hover .overlay, 
+.work-item-3:hover .overlay,
+.pic-item-2:hover .overlay,
+.pic-item-3:hover .overlay{
+    opacity: 1;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
+}
+
+.work-item-2 h3,
+.work-item-3 h3,
+.pic-item-2 h3,
+.pic-item-3 h3{ 
+    color:#404040; 
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+
+}
+
+.work-item-2 p,
+.work-item-3 p,
+.pic-item-2 p,
+.pic-item-3 p{ 
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
+    color:#606060; 
+    line-height: 20px;
+    padding-bottom: 16px;
+    
+}
+/*===================== pop-up =====================*/
+
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden;
+}
+
+.btn-gallery img {
+
+}
+
+/*===================== button =====================*/
+
+.button{
+    color: #404040;
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    background: #fff;
+    width: 80px;
+    padding: 8px 20px;
+    cursor: pointer;
+    
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.15);
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    /*transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;*/
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+/*===================== contact =====================*/
+
+.contact li{
+    display: inline;
+}
+
+.contact li a{
+    color: #404040;
+}
+.contact li a:hover{
+    color: #b6caca;
+}
+
+.contact li span:after{
+    content: ' ';
+    
+}
+
+/*===================== footer =====================*/
+
+#footer {
+   
+}
+
+/*===================== responsive =====================*/
+
+/*瀏覽區域的寬度小於1000像素*/
+@media screen and ( max-width: 1000px ){
+    
+   .nav-container{
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    ul.logo{ 
+        display: inline-block;
+        margin: 0;
+        padding: 0;  
+    }
+
+    ul.menu {
+        display: inline-block;
+        margin: 0;
+        padding: 0;     
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 160px;
+    }
+}
+
+/*瀏覽區域的寬度小於800像素*/
+@media screen and ( max-width: 800px ){
+    
+   .work-item-3, 
+   .pic-item-3{
+        width: 46%;
+        height: auto;
+        margin: 0 2% 4% 2%;
+    }
+
+
+}
+
+/*瀏覽區域的寬度小於480像素*/
+@media screen and ( max-width: 480px ){
+    
+   .work-item-2, 
+   .work-item-3,
+   .pic-item-2,
+   .pic-item-3{
+        width: 90%;
+        height: auto;
+        margin: 0 5% 8% 5%;
+
+    }
+
+}
