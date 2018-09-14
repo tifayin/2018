@@ -428,10 +428,15 @@ ul.menu li a:hover {
 /*瀏覽區域的寬度小於480像素*/
 @media screen and ( max-width: 480px ){
     
-   .work-item-2, 
-   .work-item-3,
-   .pic-item-2,
-   .pic-item-3{
+    .nav{
+        padding: 5px 0px;
+    }
+
+    
+    .work-item-2, 
+    .work-item-3,
+    .pic-item-2,
+    .pic-item-3{
         width: 90%;
         height: auto;
         margin: 0 5% 8% 5%;
