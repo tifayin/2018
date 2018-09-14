@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import "compass/css3";
+/*@import "compass/css3";*/
 
 
 html, body, div, span, applet, object, iframe,
@@ -68,11 +68,13 @@ img {
      max-width: 100%;
  }
 
+input[type="button"]{
+  cursor: pointer;
+}
 /*===================== main =====================*/
 
 h1, h2, h3 {
-    text-align: center;
-    
+    text-align: center;   
     font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
 }
 
@@ -200,10 +202,21 @@ ul.menu li a:hover {
     margin-left: auto;
     margin-right: auto;
     /*padding: 0 5vw;*/
-    
+
     cursor: pointer;
     display: flow-root;
 }
+
+.work-container:after{
+    content: "";
+    clear: both;  
+    display: table;
+}
+
+.clearfix {     
+    clear: both;
+    content: "";
+  }
 
 .work-item-2,
 .work-item-3,
@@ -218,7 +231,7 @@ ul.menu li a:hover {
     /*overflow: hidden;
     transform: rotate(0deg);
     -webkit-transform:rotate(0deg);*/
-    
+    cursor: pointer;
 }
 
 .work-item-2,
