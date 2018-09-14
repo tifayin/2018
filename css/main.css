@@ -212,6 +212,8 @@ ul.menu li a:hover {
     border-radius: 2%;
     -moz-border-radius: 2%;
     -webkit-border-radius: 2%;
+    
+    cursor: pointer;
     /*overflow: hidden;
     transform: rotate(0deg);
     -webkit-transform:rotate(0deg);*/
