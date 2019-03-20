@@ -64,7 +64,7 @@ ol, ul {
     display: block;
 }
 
-img {
+img,svg {
      height: auto;
      max-width: 100%;
  }
