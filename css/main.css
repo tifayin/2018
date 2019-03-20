@@ -100,7 +100,7 @@ h3 {
     font-weight: 700;
     line-height: 20px;
     padding-bottom: 20px;   
-    text-transform: uppercase;
+    
 }
 
 p {
@@ -239,6 +239,11 @@ ul.menu li a:hover {
     transform: rotate(0deg);
     -webkit-transform:rotate(0deg);*/
     cursor: pointer;
+}
+.col-1{
+    width: 60%;
+    height: auto;
+    margin: 0 20% 4% 20%;
 }
 
 .col-2{
@@ -410,13 +415,13 @@ ul.menu li a:hover {
 }
 
 /*瀏覽區域的寬度小於480像素*/
-@media screen and ( max-width: 480px ){
+@media screen and ( max-width: 660px ){
 
     .nav{
         padding: 5px 0px;
     }
     
-    .col-2, .col-3{
+    .col-1, .col-2, .col-3{
         width: 90%;
         height: auto;
         margin: 0 5% 8% 5%;
