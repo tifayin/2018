@@ -74,7 +74,7 @@ input[type="button"]{
 }
 /*===================== main =====================*/
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;   
     font-family: 'Montserrat', Helvetica, Arial, sans-serif; 
     letter-spacing: 0.05rem;
@@ -138,7 +138,7 @@ ul{
     width: 100%;
     z-index: 1;
     position: fixed;
-    padding: 16px 0px;
+    
     background: #f5f5f5;
 }
 
@@ -150,6 +150,9 @@ ul{
     display:flow-root;
     /*padding: 0 5vw;*/
 }
+
+
+
 
 ul.logo{ 
     display: inline-block;
@@ -173,7 +176,7 @@ ul.menu li{
 }
 
 ul.menu li a {
-    padding: 1rem 2rem;
+    padding: 1rem;
     display: inline-block;
     text-decoration: none;
     color: #404040;
@@ -193,7 +196,7 @@ ul.menu li a:hover {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    padding-top: 160px;
+    padding-top: 120px;
     /*padding: 160px 5vw 0 5vw;*/
 }
 
@@ -206,6 +209,8 @@ ul.menu li a:hover {
 
     /*cursor: pointer;*/
     display: flow-root;
+    
+    text-align: center;
 }
 
 .work-container:after{
@@ -219,18 +224,26 @@ ul.menu li a:hover {
     content: "";
 }
 
+.title-item{
+    text-align: left;
+    padding-bottom: 60px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .about-item{
     text-align: left;
     padding-bottom: 60px;
     max-width: 600px;
     margin: 0 auto;
     position: relative;
-    
 }
+
 .about-item h3{
     text-align: left;
-    
 }
+
 /*===================== work =====================*/
 
 
@@ -310,15 +323,17 @@ ul.menu li a:hover {
     -webkit-border-radius: 2%;
 }
 
-.work-item:hover .overlay,
-.pic-item:hover .overlay{
+.work-item:hover .overlay{
     opacity: 1;
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
 }
 
-
+.pic-item:hover .overlay{
+    opacity: 1;
+   
+}
 
 .work-item h3,
 .pic-item h3{ 
@@ -331,6 +346,7 @@ ul.menu li a:hover {
 .work-item h4,
 .pic-item h4{ 
     line-height: 20px;
+    font-weight: 400;
     padding-top: 16px;
     padding-bottom: 4px;
     text-align: center;
@@ -407,6 +423,7 @@ ul.menu li a:hover {
 #footer {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif; 
     text-align: center;
+    padding-bottom: 20px;
 }
 
 /*===================== responsive =====================*/
@@ -438,8 +455,10 @@ ul.menu li a:hover {
 /*瀏覽區域的寬度小於480像素*/
 @media screen and ( max-width: 660px ){
 
-    .nav{
-        padding: 5px 0px;
+    
+    
+    ul.menu li a {
+        padding: 0.5rem;
     }
     
     .col-1, .col-2, .col-3{
