@@ -196,7 +196,7 @@ ul.menu li a:hover {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
-    padding-top: 120px;
+    padding-top: 160px;
     /*padding: 160px 5vw 0 5vw;*/
 }
 
@@ -444,7 +444,7 @@ ul.menu li a:hover {
 /*瀏覽區域的寬度小於800像素*/
 @media screen and ( max-width: 800px ){
     
-   .col-3{
+   .col-3, .col-4{
         width: 46%;
         height: auto;
         margin: 0 2% 4% 2%;
